@@ -12,13 +12,10 @@ window.SAS_SUBMISSION = {
   task1: {
     title: "Technology Professional Development Portfolio",
     context:
-      "Adult learning for educators on purposeful technology — learning goals first, screen time only when it earns its place. Supporting toolkit included below.",
-    // Examples:
-    // "https://www.youtube.com/embed/VIDEO_ID"
-    // or leave "" and set videoFile to a relative path if hosted with the site
+      "Adult learning for educators on purposeful technology — goals first; screens only when they earn their place.",
     videoEmbedUrl: "",
-    videoFile: "", // e.g. "assets/task1-pd.mp4" if you upload video into this folder
-    videoNote: "Video link will appear here once uploaded (≤15 minutes).",
+    videoFile: "",
+    videoNote: "Recording will sit here once uploaded (≤15 minutes). Toolkit is ready below.",
     supports: [
       {
         label: "PD toolkit (one-pager)",
