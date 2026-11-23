@@ -12,7 +12,7 @@ window.SAS_SUBMISSION = {
   task1: {
     title: "Technology Professional Development Portfolio",
     context:
-      "One arc: engaging IMPACT design → Desmos clarity → continuum for confidence → classroom videos as what teachers did next.",
+      "When the turtle splits — a professional learning story from MS IMPACT, and the classroom practice that followed.",
     videoEmbedUrl: "",
     videoFile: "",
     videoNote: "Recording will sit here once uploaded (≤15 minutes). Toolkit is ready below.",
