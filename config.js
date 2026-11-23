@@ -12,7 +12,7 @@ window.SAS_SUBMISSION = {
   task1: {
     title: "Technology Professional Development Portfolio",
     context:
-      "MS IMPACT faculty PD — Standards and Technology, tools for learning. Classroom videos show teachers applying that stance.",
+      "One arc: engaging IMPACT design → Desmos clarity → continuum for confidence → classroom videos as what teachers did next.",
     videoEmbedUrl: "",
     videoFile: "",
     videoNote: "Recording will sit here once uploaded (≤15 minutes). Toolkit is ready below.",
