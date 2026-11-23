@@ -391,12 +391,15 @@
 
     const drop = document.createElement("label");
     drop.className = "dropzone";
-    drop.innerHTML =
-      "Drop a photo or video here, or click to browse<br/><small>Photos under ~1.5MB stay in the browser draft. Large videos: prefer a link.</small>";
+    const dropText = document.createElement("span");
+    dropText.textContent = "Drop a photo or video here, or click to browse";
+    const dropHint = document.createElement("small");
+    dropHint.textContent =
+      "Photos under ~1.5MB stay in the browser draft. Large videos: prefer a link.";
     const fileInput = document.createElement("input");
     fileInput.type = "file";
     fileInput.accept = "image/*,video/*";
-    drop.appendChild(fileInput);
+    drop.append(dropText, dropHint, fileInput);
     dock.appendChild(drop);
 
     const onFiles = (files, kindHint) => {

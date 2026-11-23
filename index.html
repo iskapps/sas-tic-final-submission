@@ -9,29 +9,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <a class="skip" href="#task-1">Skip to tasks</a>
 
   <div class="page">
-    <header class="pill-nav">
-      <a class="logo" href="#top">
-        <span class="logo-pixels" aria-hidden="true"><i></i><i></i><i></i></span>
-        Hardi Fichardt
-      </a>
-      <ul class="pill-links">
-        <li><a href="#features">Overview</a></li>
-        <li><a href="#task-1">Task 1</a></li>
-        <li><a href="#task-2">Task 2</a></li>
-        <li><a href="#ai">AI note</a></li>
-      </ul>
-      <div class="pill-actions">
-        <button class="btn btn-ghost btn-sm" type="button" id="edit-toggle">Edit evidence</button>
-        <a class="btn btn-dark btn-sm" href="#task-1">Open tasks</a>
-      </div>
-    </header>
+    <div class="topbar">
+      <header class="pill-nav">
+        <a class="logo" href="#top">
+          <span class="logo-pixels" aria-hidden="true"><i></i><i></i><i></i></span>
+          Hardi Fichardt
+        </a>
+        <ul class="pill-links">
+          <li><a href="#features">Overview</a></li>
+          <li><a href="#task-1">Task 1</a></li>
+          <li><a href="#task-2">Task 2</a></li>
+          <li><a href="#ai">AI note</a></li>
+        </ul>
+        <div class="pill-actions">
+          <button class="btn btn-ghost btn-sm" type="button" id="edit-toggle">Edit evidence</button>
+          <a class="btn btn-dark btn-sm" href="#task-1">Open tasks</a>
+        </div>
+      </header>
+    </div>
 
+    <div class="shell">
     <div class="edit-banner" id="edit-banner">
       <p><strong>Edit mode on.</strong> Add text, photos, or video under each step. Drafts save in this browser. Export when ready to publish.</p>
       <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
@@ -55,8 +58,8 @@
         </a>
       </div>
 
-      <div class="orbit" aria-label="Quick links">
-        <a class="orbit-tile" href="#t1-context" title="About the PD" style="--d:1">
+      <div class="icon-row" aria-label="Quick links">
+        <a class="icon-tile" href="#t1-context" title="About the PD" aria-label="About the PD">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <circle cx="18" cy="20" r="7" fill="#FF4D8D"/>
             <circle cx="46" cy="18" r="6" fill="#FF4D8D"/>
@@ -64,26 +67,26 @@
             <path d="M24 24l16-4M40 22L36 38M24 26l6 12" stroke="#FF4D8D" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </a>
-        <a class="orbit-tile" href="#t1-video" title="PD video">
+        <a class="icon-tile" href="#t1-video" title="PD video" aria-label="PD video">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <rect x="12" y="36" width="10" height="16" rx="2" fill="#FFE500"/>
             <rect x="27" y="24" width="10" height="28" rx="2" fill="#FFE500"/>
             <rect x="42" y="14" width="10" height="38" rx="2" fill="#FFE500"/>
           </svg>
         </a>
-        <a class="orbit-tile" href="#t2-need" title="Grade 3 coaching">
+        <a class="icon-tile" href="#t2-need" title="Grade 3 coaching" aria-label="Grade 3 coaching">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <rect x="10" y="10" width="44" height="44" rx="12" fill="#FF4D8D"/>
             <path d="M18 34c6-10 10 8 16-2s8 12 14 2" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"/>
           </svg>
         </a>
-        <a class="orbit-tile" href="#t2-integrate" title="Integration">
+        <a class="icon-tile" href="#t2-integrate" title="Integration" aria-label="Integration">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <path d="M14 40L32 14l18 26H14z" fill="#3B82F6"/>
             <path d="M22 40h20l-10 14-10-14z" fill="#60A5FA"/>
           </svg>
         </a>
-        <a class="orbit-tile" href="#t2-impact" title="Impact">
+        <a class="icon-tile" href="#t2-impact" title="Impact" aria-label="Impact">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <circle cx="32" cy="32" r="18" fill="#FFE500"/>
             <circle cx="32" cy="32" r="11" fill="#F2F2F4"/>
@@ -357,9 +360,10 @@
         <span>For SAS hiring team review</span>
       </footer>
     </main>
+    </div><!-- /.shell -->
   </div>
 
-  <script src="config.js?v=4"></script>
-  <script src="evidence-app.js?v=4"></script>
+  <script src="config.js?v=5"></script>
+  <script src="evidence-app.js?v=5"></script>
 </body>
 </html>
