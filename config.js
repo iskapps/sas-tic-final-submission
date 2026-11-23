@@ -12,7 +12,7 @@ window.SAS_SUBMISSION = {
   task1: {
     title: "Technology Professional Development Portfolio",
     context:
-      "Adult learning for educators on purposeful technology — goals first; screens only when they earn their place.",
+      "Intentional Technology at ISK — Desmos turtle struggle for parents, then coached classroom examples of purposeful tech.",
     videoEmbedUrl: "",
     videoFile: "",
     videoNote: "Recording will sit here once uploaded (≤15 minutes). Toolkit is ready below.",
