@@ -1,0 +1,37 @@
+/**
+ * SAS Final-Stage Submission — edit this file when your Task 1 video is ready.
+ * Paste a YouTube (unlisted) embed URL or a public Drive preview link.
+ */
+window.SAS_SUBMISSION = {
+  candidateName: "Hardi Fichardt",
+  role: "Elementary School Technology & Innovation Coordinator",
+  school: "Singapore American School",
+  submittedFor: "Final-stage performance tasks",
+
+  // Task 1 — leave videoEmbedUrl empty until uploaded; page shows a clear placeholder
+  task1: {
+    title: "Technology Professional Development Portfolio",
+    context:
+      "Adult learning for educators on purposeful technology — learning goals first, screen time only when it earns its place. Supporting toolkit included below.",
+    // Examples:
+    // "https://www.youtube.com/embed/VIDEO_ID"
+    // or leave "" and set videoFile to a relative path if hosted with the site
+    videoEmbedUrl: "",
+    videoFile: "", // e.g. "assets/task1-pd.mp4" if you upload video into this folder
+    videoNote: "Video link will appear here once uploaded (≤15 minutes).",
+    supports: [
+      {
+        label: "PD toolkit (one-pager)",
+        href: "assets/task1-toolkit.html",
+      },
+    ],
+  },
+
+  task2: {
+    title: "Instructional Coaching & Technology Integration Challenge",
+    subtitle: "Grade 3 inquiry · Research → Evaluate → Communicate",
+  },
+
+  aiNote:
+    "I used AI as a thinking partner to organise structure, tighten wording, and check clarity against the task briefs. The professional judgment, examples, coaching approach, and pedagogical decisions are my own, drawn from practice at ISK, ASIJ, and prior schools.",
+};
