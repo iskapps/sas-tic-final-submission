@@ -204,6 +204,13 @@
 
     host.innerHTML = "";
 
+    // Hiring view: hide empty evidence entirely. Edit mode always shows the dock.
+    if (!items.length && !state.editing) {
+      host.hidden = true;
+      return;
+    }
+    host.hidden = false;
+
     const label = document.createElement("div");
     label.className = "evidence-label";
     label.innerHTML = "<span>Evidence</span>";
@@ -212,10 +219,10 @@
     const grid = document.createElement("div");
     grid.className = "evidence-grid";
 
-    if (!items.length && !state.editing) {
+    if (!items.length && state.editing) {
       const empty = document.createElement("p");
       empty.className = "evidence-empty";
-      empty.textContent = "No evidence attached yet.";
+      empty.textContent = "Nothing here yet — add text, a photo, or video below.";
       grid.appendChild(empty);
     }
 
