@@ -8,253 +8,355 @@
   <meta name="description" content="Final-stage performance tasks — Elementary School Technology & Innovation Coordinator, Singapore American School." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip" href="#task-1">Skip to tasks</a>
 
-  <div class="canvas">
-    <div class="shell">
-      <header class="pill-nav">
-        <a class="logo" href="#top">
-          <span class="logo-mark" aria-hidden="true">H</span>
-          Hardi Fichardt
-        </a>
-        <ul class="pill-links">
-          <li><a href="#task-1">Task 1</a></li>
-          <li><a href="#task-2">Task 2</a></li>
-          <li><a href="#ai">AI note</a></li>
-        </ul>
-        <div class="pill-actions">
-          <button class="btn btn-ghost btn-sm" type="button" id="edit-toggle">Edit evidence</button>
-          <a class="btn btn-dark btn-sm" href="#task-1">Open tasks</a>
-        </div>
-      </header>
+  <div class="page">
+    <header class="pill-nav">
+      <a class="logo" href="#top">
+        <span class="logo-pixels" aria-hidden="true"><i></i><i></i><i></i></span>
+        Hardi Fichardt
+      </a>
+      <ul class="pill-links">
+        <li><a href="#features">Overview</a></li>
+        <li><a href="#task-1">Task 1</a></li>
+        <li><a href="#task-2">Task 2</a></li>
+        <li><a href="#ai">AI note</a></li>
+      </ul>
+      <div class="pill-actions">
+        <button class="btn btn-ghost btn-sm" type="button" id="edit-toggle">Edit evidence</button>
+        <a class="btn btn-dark btn-sm" href="#task-1">Open tasks</a>
+      </div>
+    </header>
 
-      <div class="edit-banner" id="edit-banner">
-        <p><strong>Edit mode on.</strong> Add text, photos, or video under each step. Drafts save in this browser. Export when ready to publish.</p>
-        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
-          <button class="btn btn-blue btn-sm" type="button" id="export-evidence">Export evidence.json</button>
-          <button class="btn btn-ghost btn-sm" type="button" id="import-evidence">Import JSON</button>
-          <input type="file" id="import-file" accept="application/json,.json" hidden />
-          <button class="btn btn-ghost btn-sm" type="button" id="exit-edit">Done</button>
-        </div>
+    <div class="edit-banner" id="edit-banner">
+      <p><strong>Edit mode on.</strong> Add text, photos, or video under each step. Drafts save in this browser. Export when ready to publish.</p>
+      <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+        <button class="btn btn-blue btn-sm" type="button" id="export-evidence">Export evidence.json</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="import-evidence">Import JSON</button>
+        <input type="file" id="import-file" accept="application/json,.json" hidden />
+        <button class="btn btn-ghost btn-sm" type="button" id="exit-edit">Done</button>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <h1>Your learning. Your judgment. <span class="mark">Your evidence.</span></h1>
+      <p class="hero-lede">
+        Final-stage performance tasks for the Elementary School Technology &amp; Innovation Coordinator role at Singapore American School.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-blue" href="#features">
+          Explore tasks
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
       </div>
 
-      <section class="hero" id="top">
-        <p class="hero-kicker">Singapore American School · Final stage</p>
-        <h1>Your learning. Your judgment. <span class="mark">Your evidence.</span></h1>
-        <p class="hero-lede">
-          Two performance tasks for the Elementary School Technology &amp; Innovation Coordinator role —
-          with space under each step for the proof behind the thinking.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-blue" href="#task-1">Explore Task 1 →</a>
-          <a class="btn btn-ghost" href="#task-2">Jump to Task 2</a>
+      <div class="orbit" aria-label="Quick links">
+        <a class="orbit-tile" href="#t1-context" title="About the PD" style="--d:1">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="18" cy="20" r="7" fill="#FF4D8D"/>
+            <circle cx="46" cy="18" r="6" fill="#FF4D8D"/>
+            <circle cx="34" cy="44" r="8" fill="#FF4D8D"/>
+            <path d="M24 24l16-4M40 22L36 38M24 26l6 12" stroke="#FF4D8D" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a class="orbit-tile" href="#t1-video" title="PD video">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <rect x="12" y="36" width="10" height="16" rx="2" fill="#FFE500"/>
+            <rect x="27" y="24" width="10" height="28" rx="2" fill="#FFE500"/>
+            <rect x="42" y="14" width="10" height="38" rx="2" fill="#FFE500"/>
+          </svg>
+        </a>
+        <a class="orbit-tile" href="#t2-need" title="Grade 3 coaching">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <rect x="10" y="10" width="44" height="44" rx="12" fill="#FF4D8D"/>
+            <path d="M18 34c6-10 10 8 16-2s8 12 14 2" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"/>
+          </svg>
+        </a>
+        <a class="orbit-tile" href="#t2-integrate" title="Integration">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <path d="M14 40L32 14l18 26H14z" fill="#3B82F6"/>
+            <path d="M22 40h20l-10 14-10-14z" fill="#60A5FA"/>
+          </svg>
+        </a>
+        <a class="orbit-tile" href="#t2-impact" title="Impact">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <circle cx="32" cy="32" r="18" fill="#FFE500"/>
+            <circle cx="32" cy="32" r="11" fill="#F2F2F4"/>
+            <circle cx="32" cy="32" r="5" fill="#111113"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- FEATURES twin cards -->
+    <section class="band" id="features">
+      <span class="badge">Tasks</span>
+      <h2>Two clear deliverables for the hiring team.</h2>
+      <p>Professional learning portfolio and a Grade 3 coaching response — with evidence under every step.</p>
+
+      <div class="feature-grid">
+        <a class="feature-card" href="#task-1">
+          <div class="mini-ui" aria-hidden="true">
+            <div class="mini-row">
+              <div class="mini-ico pink">PD</div>
+              <div class="mini-copy">
+                <strong>Session context</strong>
+                <span>Audience, goal, adult-learning design</span>
+              </div>
+            </div>
+            <div class="mini-row">
+              <div class="mini-ico yellow">▶</div>
+              <div class="mini-copy">
+                <strong>Recording ≤15 min</strong>
+                <span>Unlisted video or Drive link</span>
+              </div>
+            </div>
+            <div class="mini-row">
+              <div class="mini-ico blue">TK</div>
+              <div class="mini-copy">
+                <strong>Reusable toolkit</strong>
+                <span>Filters · continuum · impact checks</span>
+              </div>
+            </div>
+          </div>
+          <h3>Task 1 · PD portfolio</h3>
+          <p>Technology professional development designed for educators — learning first, screens only when they earn their place.</p>
+        </a>
+
+        <a class="feature-card" href="#task-2">
+          <div class="mini-ui" aria-hidden="true">
+            <div class="mini-add">+ Add classroom evidence</div>
+            <div class="mini-row">
+              <span class="grab">⠿</span>
+              <div class="mini-ico pink">1</div>
+              <div class="mini-copy"><strong>Understand the need</strong><span>Listen before tools</span></div>
+              <span class="mini-toggle on"></span>
+            </div>
+            <div class="mini-row">
+              <span class="grab">⠿</span>
+              <div class="mini-ico blue">2</div>
+              <div class="mini-copy"><strong>Integrate with purpose</strong><span>Tech optional</span></div>
+              <span class="mini-toggle"></span>
+            </div>
+            <div class="mini-row">
+              <span class="grab">⠿</span>
+              <div class="mini-ico yellow">3</div>
+              <div class="mini-copy"><strong>Build capacity</strong><span>Explore → Try → Embed</span></div>
+              <span class="mini-toggle"></span>
+            </div>
+          </div>
+          <h3>Task 2 · Coaching challenge</h3>
+          <p>Grade 3 inquiry: research → evaluate → communicate — without drowning learners in screens.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <section class="band">
+      <span class="badge">Approach</span>
+      <h2>Learning first across the whole coaching flow.</h2>
+      <p>How I move from listening to impact — the same arc the panel can probe in Task 2.</p>
+
+      <div class="flow">
+        <div class="flow-root">Coaching workflow</div>
+        <div class="flow-stem" aria-hidden="true"></div>
+        <div class="flow-rail" aria-hidden="true"></div>
+        <div class="flow-grid">
+          <a class="flow-card" href="#t2-need">
+            <div class="flow-dot"></div>
+            <strong>Understand the need</strong>
+          </a>
+          <a class="flow-card" href="#t2-integrate">
+            <div class="flow-dot"></div>
+            <strong>Integrate with purpose</strong>
+          </a>
+          <a class="flow-card" href="#t2-capacity">
+            <div class="flow-dot"></div>
+            <strong>Build teacher capacity</strong>
+          </a>
+          <a class="flow-card" href="#t2-impact">
+            <div class="flow-dot"></div>
+            <strong>Evaluate student impact</strong>
+          </a>
         </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- TASK 1 DETAIL -->
+      <section class="detail" id="task-1">
+        <div class="detail-head">
+          <p class="eyebrow">Task 1</p>
+          <h2>Technology Professional Development Portfolio</h2>
+          <p id="task1-context">Adult learning for educators on purposeful technology — goals first; screens only when they earn their place.</p>
+        </div>
+
+        <article class="step" id="t1-context" data-step="t1-context">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>About this PD</h3>
+          </div>
+          <div class="step-body">
+            <p>Who the session was for, what we were trying to shift in practice, and how adult learning was designed (continuum of confidence, hands-on try, reusable toolkit).</p>
+          </div>
+          <div class="evidence" data-evidence-for="t1-context"></div>
+        </article>
+
+        <article class="step" id="t1-video" data-step="t1-video">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>PD recording</h3>
+          </div>
+          <div class="step-body">
+            <div class="media-shell" id="task1-media">
+              <div class="media-placeholder" id="task1-placeholder">
+                <strong>PD video</strong>
+                <p>Add a YouTube/Drive link or upload a clip in edit mode (≤15 min).</p>
+              </div>
+            </div>
+          </div>
+          <div class="evidence" data-evidence-for="t1-video"></div>
+        </article>
+
+        <article class="step" id="t1-toolkit" data-step="t1-toolkit">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>Supporting toolkit</h3>
+            <a class="btn btn-ghost btn-sm" href="assets/task1-toolkit.html">Open toolkit</a>
+          </div>
+          <div class="step-body">
+            <p>Filters, inquiry moments, and Explore → Try → Embed continuum teachers can keep after the session.</p>
+          </div>
+          <div class="evidence" data-evidence-for="t1-toolkit"></div>
+        </article>
       </section>
 
-      <div class="tile-row" aria-label="Jump to steps">
-        <a class="tile" href="#t1-video">
-          <div class="tile-icon a">PD</div>
-          <strong>Task 1 · Video</strong>
-          <span>Professional learning recording + context</span>
-        </a>
-        <a class="tile" href="#t1-toolkit">
-          <div class="tile-icon b">TK</div>
-          <strong>Task 1 · Toolkit</strong>
-          <span>One-pager teachers can reuse</span>
-        </a>
-        <a class="tile" href="#t2-need">
-          <div class="tile-icon c">G3</div>
-          <strong>Task 2 · Coaching</strong>
-          <span>Grade 3 inquiry response</span>
-        </a>
-        <a class="tile" href="#ai">
-          <div class="tile-icon d">AI</div>
-          <strong>AI note</strong>
-          <span>Transparent about the assist</span>
-        </a>
-      </div>
-
-      <main>
-        <!-- TASK 1 -->
-        <section class="section" id="task-1">
-          <p class="section-label">Task 1</p>
-          <h2>Technology Professional Development Portfolio</h2>
-          <p class="section-intro" id="task1-context">
-            Adult learning for educators on purposeful technology — goals first; screens only when they earn their place.
-          </p>
-
-          <article class="step" id="t1-context" data-step="t1-context">
-            <div class="step-top">
-              <h3><span class="step-num">1</span>About this PD</h3>
-            </div>
-            <div class="step-body">
-              <p>
-                Who the session was for, what we were trying to shift in practice, and how adult learning was designed
-                (continuum of confidence, hands-on try, reusable toolkit).
-              </p>
-            </div>
-            <div class="evidence" data-evidence-for="t1-context"></div>
-          </article>
-
-          <article class="step" id="t1-video" data-step="t1-video">
-            <div class="step-top">
-              <h3><span class="step-num">2</span>PD recording</h3>
-            </div>
-            <div class="step-body">
-              <div class="media-shell" id="task1-media">
-                <div class="media-placeholder" id="task1-placeholder">
-                  <strong>PD video</strong>
-                  <p>Add a YouTube/Drive link or upload a clip in edit mode (≤15 min).</p>
-                </div>
-              </div>
-            </div>
-            <div class="evidence" data-evidence-for="t1-video"></div>
-          </article>
-
-          <article class="step" id="t1-toolkit" data-step="t1-toolkit">
-            <div class="step-top">
-              <h3><span class="step-num">3</span>Supporting toolkit</h3>
-              <a class="btn btn-ghost btn-sm" href="assets/task1-toolkit.html">Open toolkit</a>
-            </div>
-            <div class="step-body">
-              <p>Filters, inquiry moments, and Explore → Try → Embed continuum teachers can keep after the session.</p>
-            </div>
-            <div class="evidence" data-evidence-for="t1-toolkit"></div>
-          </article>
-        </section>
-
-        <!-- TASK 2 -->
-        <section class="section" id="task-2">
-          <p class="section-label">Task 2</p>
+      <!-- TASK 2 DETAIL -->
+      <section class="detail" id="task-2">
+        <div class="detail-head">
+          <p class="eyebrow">Task 2</p>
           <h2>Instructional Coaching &amp; Technology Integration Challenge</h2>
-          <p class="section-intro">
-            Grade 3 inquiry · Research → Evaluate → Communicate · discussion starter for the panel
-          </p>
-          <div style="margin-bottom:1rem">
+          <p>Grade 3 inquiry · Research → Evaluate → Communicate · discussion starter for the panel</p>
+          <div style="margin-top:0.85rem">
             <button class="btn btn-ghost btn-sm" type="button" onclick="window.print()">Print / save PDF</button>
           </div>
+        </div>
 
-          <article class="step" id="t2-need" data-step="t2-need">
-            <div class="step-top">
-              <h3><span class="step-num">1</span>Understanding the need</h3>
-            </div>
-            <div class="step-body">
-              <p>I would not begin with tools. I would sit with the Grade 3 team first (and join a planning block if useful) to understand:</p>
-              <ul>
-                <li><strong>The learning goal</strong> — What should students understand and be able to do as researchers and communicators?</li>
-                <li><strong>Current practice</strong> — Notebooks, library, talk partners, writing workshop — what already works?</li>
-                <li><strong>The worry under “screen time”</strong> — Distraction, shallow copying, equity, or losing talk and play?</li>
-                <li><strong>Confidence map</strong> — Who wants to lead, who wants a partner in the room, who wants to watch first?</li>
-              </ul>
-              <p>
-                Then we name success criteria together — for example, students can explain <em>how they know</em> a source is useful.
-                Excellence through clarity; Extraordinary Care for cognitive load.
-              </p>
-            </div>
-            <div class="evidence" data-evidence-for="t2-need"></div>
-          </article>
+        <article class="step" id="t2-need" data-step="t2-need">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>Understanding the need</h3>
+          </div>
+          <div class="step-body">
+            <p>I would not begin with tools. I would sit with the Grade 3 team first (and join a planning block if useful) to understand:</p>
+            <ul>
+              <li><strong>The learning goal</strong> — What should students understand and be able to do as researchers and communicators?</li>
+              <li><strong>Current practice</strong> — Notebooks, library, talk partners, writing workshop — what already works?</li>
+              <li><strong>The worry under “screen time”</strong> — Distraction, shallow copying, equity, or losing talk and play?</li>
+              <li><strong>Confidence map</strong> — Who wants to lead, who wants a partner in the room, who wants to watch first?</li>
+            </ul>
+            <p>Then we name success criteria together — for example, students can explain <em>how they know</em> a source is useful. Excellence through clarity; Extraordinary Care for cognitive load.</p>
+          </div>
+          <div class="evidence" data-evidence-for="t2-need"></div>
+        </article>
 
-          <article class="step" id="t2-integrate" data-step="t2-integrate">
-            <div class="step-top">
-              <h3><span class="step-num">2</span>Purposeful integration (tech optional)</h3>
+        <article class="step" id="t2-integrate" data-step="t2-integrate">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>Purposeful integration (tech optional)</h3>
+          </div>
+          <div class="step-body">
+            <p>Keep the inquiry arc visible: <strong>Ask → Gather → Evaluate → Synthesize → Communicate</strong>. Tech only where it improves access, thinking, or authentic audience.</p>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Inquiry moment</th>
+                    <th>Low-tech first</th>
+                    <th>Tech only if it earns its place</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Research</td>
+                    <td>Library + curated text sets</td>
+                    <td>Shared curated collection — not free-for-all search</td>
+                  </tr>
+                  <tr>
+                    <td>Evaluate</td>
+                    <td>Useful / not sure / not useful + partner talk</td>
+                    <td>Checklist; optional voice note for <em>why</em></td>
+                  </tr>
+                  <tr>
+                    <td>Communicate</td>
+                    <td>Oral rehearsal, posters, writing</td>
+                    <td>Multimedia only for audience or accessibility</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="step-body">
-              <p>Keep the inquiry arc visible: <strong>Ask → Gather → Evaluate → Synthesize → Communicate</strong>. Tech only where it improves access, thinking, or authentic audience.</p>
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Inquiry moment</th>
-                      <th>Low-tech first</th>
-                      <th>Tech only if it earns its place</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Research</td>
-                      <td>Library + curated text sets</td>
-                      <td>Shared curated collection — not free-for-all search</td>
-                    </tr>
-                    <tr>
-                      <td>Evaluate</td>
-                      <td>Useful / not sure / not useful + partner talk</td>
-                      <td>Checklist; optional voice note for <em>why</em></td>
-                    </tr>
-                    <tr>
-                      <td>Communicate</td>
-                      <td>Oral rehearsal, posters, writing</td>
-                      <td>Multimedia only for audience or accessibility</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <p class="pull">Does this help students research, evaluate, or communicate — or only add screens? If we cannot answer, leave the tool out.</p>
+            <p>Extra device use for multilingual learners or learning support is equity — not entertainment screen time.</p>
+          </div>
+          <div class="evidence" data-evidence-for="t2-integrate"></div>
+        </article>
+
+        <article class="step" id="t2-capacity" data-step="t2-capacity">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>Building teacher capacity</h3>
+          </div>
+          <div class="step-body">
+            <div class="continuum">
+              <div>
+                <strong>Explore</strong>
+                <p>Observe a co-planned mini-lesson; receive a one-page toolkit.</p>
               </div>
-              <p class="pull">Does this help students research, evaluate, or communicate — or only add screens? If we cannot answer, leave the tool out.</p>
-              <p>Extra device use for multilingual learners or learning support is equity — not entertainment screen time.</p>
-            </div>
-            <div class="evidence" data-evidence-for="t2-integrate"></div>
-          </article>
-
-          <article class="step" id="t2-capacity" data-step="t2-capacity">
-            <div class="step-top">
-              <h3><span class="step-num">3</span>Building teacher capacity</h3>
-            </div>
-            <div class="step-body">
-              <div class="continuum">
-                <div>
-                  <strong>Explore</strong>
-                  <p>Observe a co-planned mini-lesson; receive a one-page toolkit.</p>
-                </div>
-                <div>
-                  <strong>Try with partner</strong>
-                  <p>Co-teach one research or evaluate lesson; I model, then fade.</p>
-                </div>
-                <div>
-                  <strong>Embed</strong>
-                  <p>Lead independently; brief 10-minute reflection afterward.</p>
-                </div>
+              <div>
+                <strong>Try with partner</strong>
+                <p>Co-teach one research or evaluate lesson; I model, then fade.</p>
               </div>
-              <p>Keep support tiny and practical. Grow peer champions. Mixed confidence is normal; shame is not.</p>
+              <div>
+                <strong>Embed</strong>
+                <p>Lead independently; brief 10-minute reflection afterward.</p>
+              </div>
             </div>
-            <div class="evidence" data-evidence-for="t2-capacity"></div>
-          </article>
+            <p>Keep support tiny and practical. Grow peer champions. Mixed confidence is normal; shame is not.</p>
+          </div>
+          <div class="evidence" data-evidence-for="t2-capacity"></div>
+        </article>
 
-          <article class="step" id="t2-impact" data-step="t2-impact">
-            <div class="step-top">
-              <h3><span class="step-num">4</span>Evaluating impact</h3>
-            </div>
-            <div class="step-body">
-              <p>Look at <strong>student learning</strong>, not tool counts:</p>
-              <ul>
-                <li>Can students explain source usefulness in their own words?</li>
-                <li>Process evidence: notes, sorts, short reflections — not only final products</li>
-                <li>Teacher voice: Did planning feel clearer? Did screen time feel intentional?</li>
-                <li>If tech adds noise, remove it and keep the pedagogy</li>
-              </ul>
-              <p>Success is stronger inquiry thinking and teacher ownership — with technology helping visibly or rightly left aside.</p>
-            </div>
-            <div class="evidence" data-evidence-for="t2-impact"></div>
-          </article>
-        </section>
+        <article class="step" id="t2-impact" data-step="t2-impact">
+          <div class="step-top">
+            <h3><span class="step-dot" aria-hidden="true"></span>Evaluating impact</h3>
+          </div>
+          <div class="step-body">
+            <p>Look at <strong>student learning</strong>, not tool counts:</p>
+            <ul>
+              <li>Can students explain source usefulness in their own words?</li>
+              <li>Process evidence: notes, sorts, short reflections — not only final products</li>
+              <li>Teacher voice: Did planning feel clearer? Did screen time feel intentional?</li>
+              <li>If tech adds noise, remove it and keep the pedagogy</li>
+            </ul>
+            <p>Success is stronger inquiry thinking and teacher ownership — with technology helping visibly or rightly left aside.</p>
+          </div>
+          <div class="evidence" data-evidence-for="t2-impact"></div>
+        </article>
+      </section>
 
-        <section class="ai-block" id="ai">
-          <h2>AI acknowledgement</h2>
-          <p id="ai-note">
-            I used AI as a thinking partner to organise structure, tighten wording, and check clarity against the task briefs.
-            The professional judgment, examples, coaching approach, and pedagogical decisions are my own, drawn from practice
-            at ISK, ASIJ, and prior schools.
-          </p>
-        </section>
+      <section class="ai-block" id="ai">
+        <h2>AI acknowledgement</h2>
+        <p id="ai-note">
+          I used AI as a thinking partner to organise structure, tighten wording, and check clarity against the task briefs.
+          The professional judgment, examples, coaching approach, and pedagogical decisions are my own, drawn from practice
+          at ISK, ASIJ, and prior schools.
+        </p>
+      </section>
 
-        <footer class="site-footer">
-          <span>Hardi Fichardt</span>
-          <span>For SAS hiring team review</span>
-        </footer>
-      </main>
-    </div>
+      <footer class="site-footer">
+        <span>Hardi Fichardt</span>
+        <span>For SAS hiring team review</span>
+      </footer>
+    </main>
   </div>
 
   <script src="config.js"></script>
